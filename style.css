@@ -61,7 +61,6 @@ header{
 
 }
 .banner , .navbar{
-  
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -71,10 +70,135 @@ header{
 margin-bottom: 30px;
 }
 
+/* main section style  */
+main{
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.team{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 70px;
+   max-width: 1000px;
+  margin: 0 auto;
+}
+.team-img{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.img-size{
+  width: 250px;
+  height: 250px;
+}
+
+.features-title ,.features-description , .btn{
+  margin: 18px;
+}
+.features-description{
+  color: #727272;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+#part-1{
+  color:#727272;
+  font-size: 2.2rem;
+  font-weight: 500;
+ 
+}
+#part-2{
+  color: #131313;
+  font-size: 2.2rem;
+  font-weight: 700;
+
+}
+#part-3{
+  color: #FF900E;
+   font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* Some facts style  */
+.facts-title{
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #131313;
+  padding: 5px;
+  margin-top: 50px;
+}
+.facts-description{
+  font-size: 1rem;
+  color: #727272;
+  font-weight: 400;
+  width: 600px;
+    padding: 5px;
+}
+
+/* Facts card style  */
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  padding: 90px 20px;
+}
+.facts-card{
+   border: 1px solid #FF900E;
+  width: 180px;
+  height: 180px;
+  border-radius: 8px;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+
+}
+.facts-number{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #424242;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+.facts-name{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #727272;
+}
+
 /* Responsibe media query  */
 @media screen and (max-width:576px) {
   .navbar,nav > ul{
     flex-direction: column;
     gap:20px;
+  }
+  .team{
+    flex-direction: column;
+  }
+.team-img{
+  grid-template-columns: repeat(1,1fr);
+}
+.features{
+  margin-left: 35px;
+}
+.facts-container{
+  grid-template-columns: repeat(2,1fr);
+padding-left:50px ;
+}
+.facts-card{
+  margin-bottom: 40px;
+  
+}
+
+}
+
+/* medium device  */
+@media screen and (min-width:577px) and (max-width:992px) {
+  .team{
+    flex-direction: column;
+
+  }
+  .features{
+    margin: 50px 90px;
   }
 }
