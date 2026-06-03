@@ -9,23 +9,20 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 .navbar{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
    padding: 35px;
-   gap: 350px;
    align-items: center;
 }
-nav > ul{
+nav > ul{ 
   display: flex;
  
 }
 nav li{
   list-style: none;
   margin-right: 45px;
- 
 }
 nav li a{
   text-decoration: none;
@@ -33,20 +30,22 @@ nav li a{
   font-weight: 500;
 }
 header{
-  background-color: #f5eae6;
- 
+  background-color: rgba(255, 144, 14, 0.1);
 }
 
-.header-details ,.header-description{
+.header-details {
   text-align: center;
-  padding: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 50px;
  
 }
 .header-title{
-  font-size: 50px;
-  margin-top: 50px;
+  font-size: 3rem;
+  margin-top: 45px;
 }
 .header-description{
+  padding: 15px;
   color: #727272;
   line-height: 25px;
 }
@@ -54,13 +53,28 @@ header{
   background-color: #FF900E;
   color: white;
   padding: 16px 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
   border: none;
   border-radius: 5px;
   text-align: center;
-  margin-bottom: 15px;
+
+}
+.banner , .navbar{
+  
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .banner-img{
-  width: 78%;
-  margin-left: 150px;
-  margin-bottom: 30px;
+  max-width: 100%;
+   margin: 0 auto;
+margin-bottom: 30px;
+}
+
+/* Responsibe media query  */
+@media screen and (max-width:576px) {
+  .navbar,nav > ul{
+    flex-direction: column;
+    gap:20px;
+  }
 }
