@@ -244,6 +244,21 @@ margin-bottom: 90px;
   height: 680px;
   width: 550px;
 }
+
+/* Button styles  */
+#experience-badge{
+  padding: 32px 35px;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+#experience-year{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.experience{
+  font-weight: 500;
+  font-size: 1.1rem;
+}
 /* Responsibe media query  */
 @media screen and (max-width:576px) {
   .navbar,nav > ul{
@@ -272,7 +287,18 @@ justify-items: center;
   justify-items: center;
   gap: 50px;
 }
-
+.main-features-section{
+  flex-direction: column;
+  justify-items: center;
+  gap: 50px;
+}
+#experience-badge{
+  margin-top: 20px;
+  margin-left: 60px;
+}
+.main-features-section img{
+  width: 100%;
+}
 }
 
 /* medium device  */
@@ -289,4 +315,16 @@ justify-items: center;
     gap: 40px;
     justify-items: center;
   }
+  .main-features-section{
+  flex-direction: column;
+  justify-items: center;
+  gap: 50px;
+}
+.main-features-section img{
+  width: 100%;
+}
+#experience-badge{
+  margin-top: 40px;
+  margin-left: 240px;
+}
 }
